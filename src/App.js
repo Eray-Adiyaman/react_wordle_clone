@@ -10,7 +10,7 @@ useEffect(()=>{
   .then(data => 
     //random int between 0-14 for solutions db
     {const randomSolution = data[Math.floor(Math.random()*data.length)]
-      setSolution(randomSolution)
+      setSolution(randomSolution.word) // im stupid. passed whole object before and couldnt spread it while formatting
     })
 },[setSolution])
 
