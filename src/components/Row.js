@@ -1,12 +1,23 @@
 
-export default function Row() {
+export default function Row({guess}) {
+
+  if(guess){
+    return (
+      <div className="row past">
+        {guess.map((letter,i)=> (
+          <div key={i} className={letter.color}>{letter.key}</div>
+        ))}
+      </div>
+    )
+  }
+  
   return (
     <div className="row">
-      <div>A</div>
-      <div>B</div>
-      <div>C</div>
-      <div>D</div>
-      <div>e</div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   )
 }

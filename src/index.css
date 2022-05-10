@@ -18,7 +18,7 @@ h1 {
   justify-content: center;
 }
 
-.row > div{
+.row div{
   display: block;
   width: 60px;
   height: 60px;
@@ -29,4 +29,16 @@ h1 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 2em;
+}
+
+.row div.green{
+  background-color: rgba(80, 230, 34, 0.87);
+}
+
+.row div.grey{
+  background-color: grey;
+}
+
+.row div.yellow{
+  background-color: rgb(233, 233, 14);
 }
